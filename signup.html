@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Transparent Registration Form HTML CSS</title>
+    <link rel="stylesheet" href="/static/signup.css?v=1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-img">
+        <div class="content">
+            <header>Registration Form</header>
+            <form id="registrationForm" action="http://localhost:8000" method="POST">
+                <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                </div>
+                <div class="field">
+                    <span class="fa fa-envelope"></span>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" id="password" name="password" class="pass-key" required placeholder="Password">
+                    <span class="show">SHOW</span>
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="pass-key" required placeholder="Confirm Password">
+                    <span class="show">SHOW</span>
+                </div>
+                <div class="field">
+                    <input type="submit" value="REGISTER">
+                </div>
+            </form>
+            <div class="login">
+                Already have an account? <a href="/login.html">Login here</a>
+            </div>
+        </div>
+    </div>
+    <script src="/static/signup.js"></script>
+</body>
+
+</html>
